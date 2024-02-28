@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header Section */
+.nav-1 {
+    display: none;
+}
+
+.nav-1,
+.navbar-ls {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #db1f2c;
+}
+
+.navbar-1 {
+    width: auto;
+    height: 100%;
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-1 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-1 img {
+    height: 60%;
+    margin-left: 1vw;
+    cursor: pointer;
+}
+
+.menu-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+}
+
+.menu-1 a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s;
+    text-align: center;
+}
+
+.closebtn-1 {
+    display: inline;
+}
+
+#openNavIcon-1 {
+    color: #fff;
+    display: block;
+    float: right;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.sidenav-1 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background: radial-gradient(#fa473ac1, #d10a21c4);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav-1 a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1em;
+    display: inline;
+    transition: 0.3s;
+}
+
+.sidenav-1 .closebtn-1 {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 30px;
+}
+
+.ls-nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 40px;
+}
+
+.logo {
+    max-width: 40px;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.navigation li a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 40px;
+    font-weight: 500;
+}
+
+.navigation li a::after {
+    position: absolute;
+    right: 0;
+    content: "";
+    width: 100%;
+    margin-top: 5px;
+    height: 2px;
+    transform: scaleX(0);
+    display: block;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation li:hover ::after {
+    transform: scaleX(1);
+}
+
+/* About Section */
+.about-kfc {
+    width: 100%;
+    height: auto
+}
+
+.about-kfc .wrap-1 {
+    width: 93%;
+    height: 100%;
+    margin: auto;
+    padding: 70px 0;
+    padding-top: 130px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.img-KFC-owner {
+    place-self: center;
+    grid-area: 1/2/3/3;
+}
+
+.img-KFC-owner img {
+    width: 340px;
+    border-radius: 100px 20px 100px 20px;
+}
+
+.about-info {
+    margin-top: 20px;
+}
+
+.about-info h5 {
+    display: inline-block;
+    font-weight: 700;
+    color: #202124;
+}
+
+.about-info h5::after {
+    content: '';
+    display: inline-block;
+    width: 150px;
+    height: 0.3vh;
+    background-color: rgba(128, 128, 128, 0.637);
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
+
+.about-info p {
+    margin-top: 20px;
+    width: 380px;
+    font-size: 1em;
+    color: #202124;
+}
+
+.ab-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 5px;
+    font-size: 4.4em;
+    font-weight: 700;
+}
+
+.journey {
+    background: radial-gradient(#fa473a, #d10a21);
+    color: #fff;
+    width: 100%;
+    height: auto;
+    padding: 0 30px;
+    overflow-x: hidden;
+}
+
+.journey .wrap-2 {
+    width: 100%;
+    height: 50%;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.journey .wrap-2 h4 {
+    font-weight: 800;
+    font-size: 2em;
+}
+
+.journey .wrap-2 p {
+    width: 86%;
+    font-size: 0.8em;
+    line-height: 22px;
+}
+
+.wrap-2 .card {
+    width: 100%;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(1, 100%);
+    place-items: center;
+}
+
+.card .cards {
+    width: 200px;
+    height: 200px;
+    color: black;
+    background-color: #fff;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+}
+
+.card .cards .img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .cards .info {
+    width: 100%;
+    text-align: center;
+}
+
+.info p:nth-child(1) {
+    font-weight: 500;
+}
+
+.info p:nth-child(2) {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+/* Footer Section */
+.foot {
+    width: 100%;
+    height: auto;
+    background: #202124;
+    padding: 25px 40px;
+}
+
+.top-foot {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    height: 50%;
+}
+
+.top-foot img {
+    width: 60px;
+}
+
+ul {
+    font-size: 10px;
+}
+
+ul li {
+    list-style-type: none;
+    color: white;
+    padding: 2px;
+    font-size: 1.2em;
+}
+
+ul li>a {
+    text-decoration: none;
+    color: white;
+}
+
+.location .underline {
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+.playstore img,
+.applestore img {
+    width: 100px;
+}
+
+.warap {
+    width: 100%;
+    height: 100%;
+}
+
+.bottom-foot {
+    margin-top: 15px;
+}
+
+.bottom-foot .copy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-foot .copy h6 {
+    font-weight: 300;
+    color: white;
+    font-size: 0.8em;
+}
+
+.copy .s-icon a i {
+    margin-right: 12px;
+    font-size: 1.1em;
+    transition: all .3s ease-in-out;
+}
+
+.copy .s-icon i:hover {
+    transform: translateY(-5px);
+}
+
+/* Media Querys */
+@media (min-width: 0px) and (max-width: 576px) {
+    .navbar-ls {
+        display: none;
+    }
+
+    .nav-1 {
+        display: block;
+    }
+
+    .logo-1 img {
+        height: 55%;
+    }
+
+    .foot {
+        height: auto;
+    }
+
+    .top-foot {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        height: 50%;
+    }
+
+    .copy {
+        text-align: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .bottom-foot .copy h6 {
+        font-size: 0.5em;
+    }
+
+    .copy .s-icon a i {
+        font-size: 0.8em;
+        margin-right: 6px;
+    }
+
+    .about-kfc .wrap-1 {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ab-left {
+        text-align: center;
+        font-size: 1.8em;
+    }
+
+    .img-KFC-owner img {
+        width: 180px;
+        border-radius: 0 0 0 0;
+    }
+
+    .about-info h5 {
+        font-size: 1em;
+    }
+
+    .about-info p {
+        width: 60%;
+        font-size: 0.8em;
+    }
+
+    .journey {
+        padding: 0 15px;
+    }
+
+    .journey .wrap-2 h4 {
+        font-size: 1.7em;
+    }
+
+    .journey .wrap-2 p {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .wrap-2 .card {
+        grid-template-columns: repeat(1, 45%);
+        grid-template-rows: repeat(4, 25%);
+        grid-gap: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .navbar-ls {
+        display: none;
+    }
+
+    .nav-1 {
+        display: block;
+    }
+
+    .foot {
+        height: auto;
+    }
+
+    .top-foot {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        height: 50%;
+    }
+
+    .about-kfc .wrap-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ab-left {
+        text-align: center;
+        font-size: 2.9em;
+    }
+
+    .img-KFC-owner img {
+        width: 190px;
+        border-radius: 0 0 0 0;
+    }
+
+    .about-info h5 {
+        font-size: 1em;
+    }
+
+    .about-info p {
+        font-size: 1em;
+    }
+
+    .journey .wrap-2 p {
+        width: 100%;
+    }
+
+    .wrap-2 .card {
+        grid-template-columns: repeat(2, 45%);
+        grid-template-rows: repeat(2, 50%);
+        grid-gap: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .navbar-ls {
+        display: none;
+    }
+
+    .nav-1 {
+        display: block;
+    }
+
+    .about-kfc .wrap-1 {
+        grid-gap: 40px;
+    }
+
+    .foot {
+        height: auto;
+    }
+
+    .top-foot {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        height: 50%;
+    }
+
+    .applestore {
+        grid-area: 2/5/3/6;
+    }
+
+    .playstore {
+        grid-area: 2/4/3/5;
+    }
+
+    .location {
+        grid-area: 2/3/3/4;
+    }
+
+    .ab-left {
+        height: 150%;
+        font-size: 2.6em;
+    }
+
+    .img-KFC-owner img {
+        width: 260px;
+    }
+
+    .about-info p {
+        font-size: 0.91em;
+    }
+
+    .journey .wrap-2 p {
+        width: 100%;
+    }
+
+    .wrap-2 .card {
+        grid-template-columns: repeat(2, 35%);
+        grid-template-rows: repeat(2, 50%);
+        grid-gap: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .ab-left {
+        height: 140%;
+        font-size: 3em;
+    }
+
+    .img-KFC-owner img {
+        width: 300px;
+    }
+
+    .journey .wrap-2 p {
+        width: 800px;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1440px) {
+    .ab-left {
+        font-size: 4em;
+    }
+
+    .img-KFC-owner img {
+        width: 300px;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+    .ab-left {
+        font-size: 4em;
+    }
+
+    .img-KFC-owner img {
+        width: 300px;
+    }
+
+    .about-info h5 {
+        font-size: 1.6em;
+    }
+
+    .about-info h5::after {
+        margin-bottom: 7px;
+    }
+
+    .about-info p {
+        width: 550px;
+        font-size: 1.5em;
+    }
+}

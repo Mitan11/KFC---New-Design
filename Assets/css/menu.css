@@ -174,11 +174,9 @@ ul li > a{
     padding: 10px 15px;
     border: 1px solid #db1f2c;
     border-radius: 40px;
-}
-
-.top-menu-item .m-list li>a{
     color: #000;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .top-menu-item .m-list{
